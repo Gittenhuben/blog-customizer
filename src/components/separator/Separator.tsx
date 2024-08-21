@@ -1,5 +1,9 @@
 import styles from './index.module.scss';
 
-export const Separator = () => {
-	return <div className={styles.separator}></div>;
+type TSeparatorProps = {
+  color?: string
+}
+
+export function Separator({color}: TSeparatorProps) {
+  return <div className={styles.separator} style={ color ? {'backgroundColor': color} : undefined }></div>;
 };
