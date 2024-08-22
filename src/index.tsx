@@ -12,7 +12,7 @@ const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);
 
 const App = () => {
-  const [counter, setCounter] = useState(-1);
+  const setCounter = useState(-1)[1];
   return (
     <div
       className={clsx(styles.main)}
